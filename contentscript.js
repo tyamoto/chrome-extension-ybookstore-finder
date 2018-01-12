@@ -15,9 +15,9 @@ jQuery(function($) {
              * address02  = response.address02;
              */
 
-            // console.log($("li:contains('ISBN-13')"));
-            var isEbook = $("li:contains('ISBN-13')").text() == null;
-            var title   = isEbook ? $("#productTitle").text() : $("#ebooksProductTitle").text();
+            var isEbook = $("li:contains('ISBN-13')").length == 0;
+            // console.log(isEbook);
+            var title   = isEbook ? $("#ebooksProductTitle").text() : $("#productTitle").text();
             if (! title) {
                 return;
             }
