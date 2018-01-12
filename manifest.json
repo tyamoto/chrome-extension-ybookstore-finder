@@ -1,0 +1,24 @@
+{
+    "browser_action": {
+        "default_icon": "images/icon16.png",
+        "default_popup": "popup.html",
+        "default_title": "ブックストア検索"
+    },
+    "content_scripts": [ {
+        "css": [ "style.css" ],
+        "js": [ "jquery-3.2.1.min.js", "contentscript.js" ],
+        "matches": [ "http://www.amazon.co.jp/*", "https://www.amazon.co.jp/*" ],
+        "run_at": "document_end"
+    } ],
+    "icons": {
+        "128": "images/icon128.png",
+        "16": "images/icon16.png",
+        "48": "images/icon48.png"
+    },
+    "manifest_version": 2,
+    "name": "ブックストア検索",
+    "description": "amazon詳細ページからブックストア検索を行います",
+    "version": "1.0",
+    "web_accessible_resources": [ "images/ajax-loader.gif", "images/logo.jpg" ],
+    "permissions": [ "https://bookstore.yahoo.co.jp/" ]
+}
