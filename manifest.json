@@ -5,15 +5,15 @@
         "default_title": "ブックストア検索"
     },
     "content_scripts": [ {
-        "css": [ "style.css" ],
-        "js": [ "jquery-3.2.1.min.js", "contentscript.js" ],
-        "matches": [ "http://www.amazon.co.jp/*", "https://www.amazon.co.jp/*" ],
+        "css": [ "/assets/css/style.css" ],
+        "js": [ "/assets/js/jquery-3.3.1.min.js", "/assets/js/contentscript.js" ],
+        "matches": [ "https://www.amazon.co.jp/*" ],
         "run_at": "document_end"
     } ],
     "icons": {
         "128": "images/icon128.png",
-        "16": "images/icon16.png",
-        "48": "images/icon48.png"
+        "48": "images/icon48.png",
+        "16": "images/icon16.png"
     },
     "manifest_version": 2,
     "name": "ブックストア検索",
