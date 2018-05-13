@@ -1,0 +1,66 @@
+body {
+    margin:0;
+}
+
+#bssOutput {
+    border-top: 2px solid #ccc;
+    padding: 0px 0 5px 0px;
+    margin: 10px 0 10px 0;
+}
+
+#bssOutput #bssLoader {
+    text-align: center;
+}
+
+#bssOutput .lead1 {
+    color: #d26600;
+    margin:0;
+    padding: 2px 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#bssOutput .optionLink a {
+    color: #004099 !important;
+}
+
+#bssResult {
+    margin: 0px;
+    padding: 0 0 0 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 12px !important;
+}
+
+#bssResult .found {
+    font-weight: bold;
+}
+
+#bssResult .notfound {
+}
+
+ body#popup {
+    width: 150px;
+ }
+ body#popup .inner {
+    margin: 10px;
+ }
+ body#popup h1 {
+    font-size: 12px;
+    text-align: center;
+    /* background-color: #f5f5f5; */
+    /* padding: 0px 5px 5px; */
+    line-height: 1;
+    /* border-bottom: 1px solid #ccc; */
+ }
+ body#popup ul {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+ }
+ body#popup ul li {
+    margin: 0;
+ }
+ body#popup ul li a {
+    font-size: 12px;
+ }

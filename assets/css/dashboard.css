@@ -1,0 +1,32 @@
+body {
+    padding: 1em;
+}
+
+.cards {
+    padding: 0em 0em;
+}
+
+.ui.attached.fluid.segment {
+    padding-top:1.5em;
+    padding-left:2em;
+}
+
+.container {
+    padding-top:3.5em;
+}
+
+.dashboard_container {
+    padding-top:3.5em;
+}
+
+html.ios {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+html.ios,html.ios body {
+    height: initial !important;
+}
+
+#serch_botton {
+    padding-top:0.5em;
+}
