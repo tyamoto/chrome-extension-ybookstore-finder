@@ -1,18 +1,20 @@
 (function() {
 
-    (function () {
+    // (function () {
         if (document.URL.match(/\/[dg]p\//) == null) return;
 
-        chrome.extension.sendRequest(
-            { name: "get" },
-            function(response) {
+        /*
+         * chrome.extension.sendRequest(
+         *     { name: "get" },
+         *     function(response) {
+         */
                 var isEbook = $("li:contains('ISBN-13')").length == 0;
                 var title   = isEbook ? $("#ebooksProductTitle").text() : $("#productTitle").text();
                 if (! title) {
                     return;
                 }
                 title = title.replace(/\u2015/g, ' ').replace(/\s+/, ' ');
-                console.log(title,);
+                // console.log(title,);
                 if (title.match(/^([^\s]+\s+[^\s]+)\s+.+/) || title.match(/^(.+)\s+\(\S+\)$/)) {
                     title = RegExp.$1;
                     // console.log(title,);
@@ -39,8 +41,10 @@
                  * );
                  */
                 searchBookstore(title);
-        });
-    })();
+    /*
+     *     });
+     * })();
+     */
 
     function searchBookstore(title) {
         $.ajax({
